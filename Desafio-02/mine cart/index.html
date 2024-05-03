@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercado</title>
+
+        <style>
+            main {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            section {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .fruit {
+                width: 100px;
+            }
+
+            #melancia {
+                width: 200px;
+            }
+
+            .fruits {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                margin-top: 100px;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header><h1>Mercado das Frutas</h1></header>
+        <main>
+            <section>
+                <div class="fruits">
+                    <img class="fruit" src="images/banana.png" alt="">
+                    <img class="fruit"  id="melancia" src="images/melancia.png" alt="">
+                    <img class="fruit" src="images/maca.png" alt="">
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <script>
+        var frutas = document.querySelectorAll('.fruit');
+        
+        frutas[0].addEventListener('click', escreveA)
+        frutas[1].addEventListener('click', escreveB)
+        frutas[2].addEventListener('click', escreveC)
+
+
+        function escreveA() {
+            console.log("escrevendo A...")
+        }
+
+        function escreveB() {
+            console.log("escrevendo B...")
+        }
+
+        function escreveC() {
+            console.log("escrevendo C...")
+        }
+    </script>
+</html>
